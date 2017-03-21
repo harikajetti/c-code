@@ -1,0 +1,107 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int n; 
+    scanf("%d\n",&n);
+    for(int a0 = 0; a0 < n; a0++){
+        int grade; 
+        scanf("%d\n",&grade);
+        if(grade==38||grade==40||grade==39)
+            printf("40\n");
+        else if (grade<38)
+            printf("%d\n",grade);
+         else if(grade>=41 && grade<=45)
+            {
+            if(45-grade<3)
+                printf("45\n");
+            else
+                printf("%d\n",grade);
+        }
+        else if(grade>=46 && grade<=50)
+            {
+            if(50-grade<3)
+                printf("50\n");
+            else
+                printf("%d\n",grade);
+        }
+        else if(grade>=51 && grade<=55)
+            {
+            if(55-grade<3)
+                printf("55\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=56 && grade<=60)
+            {
+            if(60-grade<3)
+                printf("60\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=61 && grade<=65)
+            {
+            if(65-grade<3)
+                printf("65\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=66 && grade<=70)
+            {
+            if(70-grade<3)
+                printf("70\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=71 && grade<=75)
+            {
+            if(75-grade<3)
+                printf("75\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=76 && grade<=80)
+            {
+            if(80-grade<3)
+                printf("80\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=81 && grade<=85)
+            {
+            if(85-grade<3)
+                printf("85\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=86 && grade<=90)
+            {
+            if(90-grade<3)
+                printf("90\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=91 && grade<=95)
+            {
+            if(95-grade<3)
+                printf("95\n");
+            else
+                printf("%d\n",grade);
+        }
+           else if(grade>=96 && grade<=100)
+            {
+            if(100-grade<3)
+                printf("100\n");
+            else
+                printf("%d\n",grade);
+        }
+        
+        // your code goes here
+    }
+    return 0;
+}
