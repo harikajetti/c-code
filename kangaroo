@@ -1,0 +1,44 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int x1,sum=0,sum1=0,i=0,count=0;
+    int v1; 
+    int x2; 
+    int v2; 
+    scanf("%d %d %d %d",&x1,&v1,&x2,&v2);
+    if(x1>x2&&v1>v2)
+        printf("NO");
+    else if(x2>x1&&v2>v1)
+        printf("NO");
+    /*else if(x1>v1&&x2>v2)
+        printf("NO");
+    else if(v1>x1&&v2>x2)
+        printf("NO");*/
+    else 
+    {   /*sum = x1+v1;
+        sum1=x2+v2;*/
+    for(i=0;i<100;i++)
+    {x1=x1+v1;
+        x2=x2+v2;
+    if(sum==sum1)
+    {count++;
+     break;}
+             
+      }
+        if(count==1)
+            printf("YES");
+        else 
+            printf("NO");
+        
+      
+    }
+    
+    return 0;
+}
+
