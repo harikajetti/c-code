@@ -1,0 +1,40 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main(){
+    int s,count=0,count1=0,d,e,i,f,g,j;
+    int t; 
+    scanf("%d %d",&s,&t);
+    int a; 
+    int b; 
+    scanf("%d %d",&a,&b);
+    int m; 
+    int n; 
+    scanf("%d %d",&m,&n);
+   for(i=0;i<m;i++)
+       {
+       scanf("%d",&d);
+    
+        g=d+a;
+       if(g>=s&&g<=t)
+        count++;
+   }
+    for(j=0;j<n;j++)
+        {
+        scanf("%d",&e);
+        
+            {f=e+b;
+            if(f>=s&&f<=t)
+            count1++;
+            }
+    }
+      printf("%d\n",count);
+    printf("%d",count1);
+    return 0;
+}
+
